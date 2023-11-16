@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Сonverter</string>
+
+    <string name="textview_description">Преобразовать число из десятичной в шестнадцатеричную и наоборот</string>
+
+    <string name="textview_16">Шестнадцатеричное число</string>
+    <string name="textview_10">Десятичное число</string>
 </resources>
