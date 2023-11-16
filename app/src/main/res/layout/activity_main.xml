@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Преобразовать число из десятичной в шестнадцатеричную и наоборот"
+        android:text="@string/textview_description"
         android:textAlignment="center"
         android:textColor="#9C27B0"
         android:textSize="20sp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/buttonConvert10to16"
+        android:id="@+id/buttonConvert10To16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/arrow_down_float"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonConvert16to10"
+        android:id="@+id/buttonConvert16To10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/arrow_up_float"
@@ -47,24 +47,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et10"
+        android:id="@+id/editText10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
+        android:maxLength="20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.4"
+        />
 
     <EditText
-        android:id="@+id/et16"
+        android:id="@+id/editText16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:maxLength="17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -76,7 +79,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Десятичное число"
+        android:text="@string/textview_10"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +91,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Шестнадцатеричное число"
+        android:text="@string/textview_16"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
